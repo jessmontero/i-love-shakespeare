@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I 💙 SHAKESPEARE</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&family=Rubik:wght@700&display=swap"
+        rel="stylesheet">
+<style>
+
+    .container {
+        max-width: 650px;
+        margin: 0 auto;
+        padding: 0px 20px;
+    }
+
+    h1 {
+        font-family: 'Rubik', helvetica, sans-serif;
+        font-size: clamp(57.5px, 6.42vw, 87.8px);
+        text-align: center;
+        margin: 0 auto;
+        color: #de5767;
+        }
+
+    h2 {
+        font-family: 'Rubik', helvetica, sans-serif;
+        font-size: clamp(46.5px, 5.5vw, 75px);
+        text-align: center;
+        letter-spacing: 7px;
+        padding: 0px 5px 0px 15px;
+        margin: 0 auto;
+        background: #de5767;
+        color: white;
+        border-radius: 4px 4px 0px 0px;
+        }
+
+    img {
+            display: block;
+            margin: 0 auto 15px;
+            max-width: 100%;
+            border-radius: 0px 0px 4px 4px;
+        }
+
+    p {
+            line-height: 1.8;
+            text-align: left;
+            font-family: 'Raleway', sans-serif;
+            font-size: 16px;
+            margin: 0 auto;
+            color: #222222;
+        }
+    
+    a.video {
+            font-family: 'Raleway', sans-serif;
+            font-size: 16px;
+            color: #406d8a;
+    }
+
+    a.video:hover {
+            text-decoration: underline;
+    }
+
+     h4 {
+            font-family: "Raleway", helvetica, sans-serif;
+            font-size: 20px;
+            font-weight: normal;
+            color: #222222;
+            text-align: center;
+
+        }
+
+    h5 {
+            font-family: "Raleway", helvetica, sans-serif;
+            font-size: 20px;
+            font-weight: normal;
+            color: #222222;
+            text-align: center;
+            margin: 25px auto 5px;
+            
+        }
+
+    button.insults {
+            display: block;
+            margin: 0 auto;
+            border-radius: 4px;
+            color: white;
+            background: linear-gradient(#406d8a, #355a72);
+            padding: 12px 18px;
+            font-family: "Raleway", helvetica, sans-serif;
+            font-size: 22px;
+            border: none;
+            box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.1);
+            transition: all 250ms ease-in-out;
+        }
+
+    button.insults:hover {
+            color: #222222;
+            background: transparent;
+            cursor: pointer;
+        }
+    
+    a {
+        text-decoration: none;
+        color: #46a381;
+    }
+
+    a.resources {
+            text-decoration: none;
+            color: white;
+            background: #222222;
+            font-family: "Raleway", helvetica, sans-serif;
+            padding: 10px 15px;
+            margin: 0 4px;
+            border-radius: 4px;
+            transition: all 200ms ease-in-out;
+
+        }
+
+    a.resources:hover {
+            color: #222222;
+            background: transparent;
+        }
+
+    ul {
+            list-style: none;
+            padding: 0;
+            text-align: center;
+            margin: 25px 0px 20px;
+
+        }
+
+    li {
+            display: inline-block;
+            font-size: 14px;
+            margin: 15px auto;
+
+        }
+    
+    p.menu {
+        font-family:'Raleway', sans-serif;
+        font-size: 14px;
+        text-align: right;
+        margin: 0 auto;
+    }
+
+    a[href*="hamlet"] {
+        color: #46a381;
+        display: block;
+    }
+
+    a[href*="hamlet"]:hover {
+        color: #de5767;
+    }
+
+    a[href*="henryV"] {
+        color: #46a381;
+        display: block;
+    }
+
+    a[href*="henryV"]:hover {
+        color: #de5767;
+    }
+    
+    a[href*="muchAdo"] {
+        color: #46a381;
+        display: block;
+    }
+
+    a[href*="muchAdo"]:hover {
+        color: #de5767;
+    }
+
+    a[href*="wintersTale"] {
+        color:#46a381;
+        display: block;
+    }
+
+    a[href*="wintersTale"]:hover {
+        color: #de5767;
+    }
+
+    a[href*="juliusCaesar"] {
+        color: #46a381;
+        display: block;
+    }
+
+    a[href*="juliusCaesar"]:hover {
+        color: #de5767;
+    }
+
+
+    h3.menu {
+        text-align: center;
+        font-family: 'Rubik', Helvetica, sans-serif;
+        font-size: 24px;
+        text-decoration: overline;
+        margin: 0 auto 15px;
+    }
+
+    h3.menuBottom {
+        text-align: center;
+        font-family: 'Rubik', Helvetica, sans-serif;
+        font-size: 24px;
+        text-decoration: overline;
+        margin: 10px auto 25px;
+        
+    }
+
+    h3.menu:hover {
+        text-decoration: underline;
+    }
+
+    h3.menuBottom:hover {
+        text-decoration: underline;
+    }
+
+    h3.title {
+        text-align: left;
+        font-family: 'Rubik', Helvetica, sans-serif;
+        font-size: 35px;
+        margin: 20px auto;
+        color: #de5767;
+        text-decoration: underline;
+        text-underline-offset: 3px;
+        border-radius: 4px;
+    }
+
+    p.footer {
+            font-family: 'Raleway', sans-serif;
+            font-size: 14px;
+            font-weight: bold;
+            text-align: center;
+            margin: 30px auto;
+            color: #de5767;
+    }
+
+    #menu {
+        color: transparent;
+        margin: 0px;
+    }
+
+    hr {
+        height: 2px;
+        background-color: #82a6bd;
+        border: none;
+        margin: 0;
+    }
+
+    p.quote {
+        text-align: center;
+        font-weight: bold;
+        color: #de5767;
+        font-size: 20px;
+    }
+
+    p.actScene {
+        text-align: center;
+        color: #82a6bd;
+        font-size: 14px;
+        margin: 15px auto;
+    }
+
+    p.character {
+        text-align: center;
+        font-weight: bold;
+        color: #82a6bd;
+        font-size: 14px;
+        margin: 18px auto -5px;
+    }
+
+    p.and {
+        text-align: center;
+        margin: 20px auto 0px;
+    }
+
+</style>
+</head>
+<body>
+    <div class="container">
+
+        <h1>SHAKESPEARE</h1>
+
+        <h2>ISN'T BORING</h2>
+
+        <img class="shakespeare" onmouseout="this.src='https://s3.amazonaws.com/shecodesio-production/uploads/files/000/003/889/original/Shakespeare_BW-P.jpg?1607967552'" onmouseover="this.src='https://s3.amazonaws.com/shecodesio-production/uploads/files/000/003/888/original/Shakespeare_Pink_with_Shades.jpg?1607967522'" src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/003/889/original/Shakespeare_BW-P.jpg?1607967552" alt=Shakespeare />
+
+        <br />
+
+        <p>
+        I love Shakespeare.
+        <br />
+        <br />
+        Unfortunately, a fair few people have the impression (<em>whether they've seen his plays or not</em>) that Shakespeare is boring,
+        difficult to understand and only enjoyable if you have an English degree or like watching paint dry.
+        <br />
+        <br />
+        I don't think any of this is true. <b>Shakespeare had something for everyone</b> and was able to write plays that appealed to audiences across a wide social spectrum.
+        <br />
+        <br />
+        From sword fights, bawdy humour, witches prophecies' and ghosts, to mistaken identities, verbal sparring, tragic love stories, comedies and
+        histories. From intrigue, plotting, revenge and murder, to questioning morality, pondering mortality and asking what it means to be human.
+        <br />
+        <br />
+        Hoping to prove my point that Shakespeare is the <em>opposite</em> of boring, I set out a few of my favourite bits below:
+        </p>
+        <p id="menu">.</p>
+        <h3 class="menu"><a href="#hamlet">HAMLET</a></h3>
+        <h3 class="menu"><a href="#henryV">HENRY V</a></h3>
+        <h3 class="menu"><a href="#muchAdo">MUCH ADO ABOUT NOTHING</a></h3>
+        <h3 class="menu"><a href="#wintersTale">THE WINTER'S TALE</a></h3>
+        <h3 class="menuBottom"><a href="#juliusCaesar">JULIUS CAESAR</a></h3>
+        <hr />
+        <hr />
+        <h5>Or maybe you fancy letting Shakespeare have a go at you?</h5>
+        
+        <br />
+        
+        <button class="insults">Brave the Bard's words</button>
+        
+        <br />
+        
+        <hr />
+        
+        <h4 class="learnMore">LEARN MORE:</h4>
+        
+        <ul>
+            <li>
+                <a class="resources" href="https://www.shakespeare.org.uk/" target="_blank">
+                    Shakespeare Birthplace Trust
+                </a>
+            </li>
+            <li>
+                <a class="resources" href="https://www.shakespearesglobe.com/" target="_blank">
+                    Shakespeare's Globe
+                </a>
+            </li>
+            <li>
+                <a class="resources" href="https://www.rsc.org.uk/" target="_blank">
+                    Royal Shakespeare Company
+                </a>
+            </li>
+        </ul>
+        <hr />
+        <hr />
+        <h3 class=title id="hamlet">HAMLET</h3>
+        <p>
+            If you've ever seen The Lion King, you already know this story. King gets murdered by his brother, who usurps the
+            throne, and the former king's son spends the rest of the time doing nothing about it... until he does. The endings are a
+            bit different, though, in the play (<b>*spoiler alert*</b>) everybody dies (which is not uncommon in Shakespeare, tbh).
+            <br />
+            <br />            
+            During that bit where "nothing happens", <em>a lot</em> of internal stuff is happening, to be fair. Hamlet is in limbo between
+            action and inaction because he can't make up his mind <em>what</em> to do. And rest assured he is most definitely <u>not</u> singing <em>Hakuna Matata</em> while he does.
+            <br />
+            <br />
+            Instead, he pretends to be mad so he can lull his uncle into a false sense of security. Problem is, having a sharper mind than the rest of the court combined, even
+            his feigned madness has infallible logic to it.
+            </p>
+            <br />
+            <p class="quote">
+            "Though this be madness, yet there is method in ’t."
+            </p>
+            <p class="actScene">- Act II, Scene II</p>
+            <p>
+            Many people associate Hamlet holding the skull with the famous "<em>To be or not to be</em>" speech. However, that is not the
+            case.
+            <br />
+            <br />            
+            When Hamlet returns to Elsinore (having been unceremoniously shipped to England by his usurper uncle to get him out of
+            the way) he stumbles upon a gravedigger who is (unbeknownst to Hamlet) digging a grave for the tragic Ophelia, whom Hamlet
+            once loved (or still loves, or maybe never did). He grabs a discarded skull and asks the gravedigger whose it is.
+            <br />
+            <br />         
+            Turns out this empty sphere of bone belonged to Yorick, a court jester whom Hamlet knew well as a kid. Hamlet reminisces
+            about how Yorick used to set the whole place laughing, and how he carried Hamlet on his back a thousand times, and
+            within seconds Hamlet comes face to face with mortality. Yorick's, his own, and everybody else's.
+            <br />
+            <br />
+            <b><em>"To what base uses we may return"</em></b> &nbsp;he exclaims to his friend Horatio. If Yorick's come to this, so has Alexander the Great and so has Julius Caesar:
+            </p>
+            <br />
+            <p class="quote">
+            "Imperious Caesar, dead and turned to clay,<br />
+            Might stop a hole to keep the wind away.<br />
+            Oh, that that earth, which kept the world in awe,<br />
+            Should patch a wall t' expel the winter’s flaw!"
+            </p>
+            <p class="actScene">- Act V, Scene I</p>
+            <p class="menu"><a href="#menu">BACK TO MENU</a></p>
+        <hr />
+        <h3 class=title id="henryV">HENRY V</h3>
+        <p>
+            Henry V is one of Shakespeare's history plays. He reigned in England in the early 15th Century and had outstanding
+            military successes in the Hundred Years' War against France.
+            <br />
+            <br />
+            Now, I'll be honest. I haven't actually read or seen Henry V (yet). However, there is a speech which I love. It is Henry's reaction to receiving a present from the Dauphin (French prince).
+            <br />
+            <br />
+            Henry had lain claim to some Dukedoms in France, and the Dauphin is clearly displeased. He sends a couple of messengers to Henry with a casket-full of tennis
+            balls, and basically says "these are more suited to your temperament, you cannot win dukedoms by partying. You'll
+            happily accept these tennis balls in lieu of the dukedoms."
+            <br />
+            <br />
+            The Dauphin is clearly mocking Henry (who, according to Shakespeare at least, led a riotous youth), but Henry's having
+            none of it. He tells the messengers:
+            </p>
+            <br />
+            <p class="quote">
+            "...I will rise there with so full a glory<br />
+            That I will dazzle all the eyes of France,<br />
+            Yea, strike the Dauphin blind to look on us.<br />
+            And tell the pleasant prince this mock of his<br />
+            Hath turned his balls to gun-stones, and his soul<br />
+            Shall stand sore chargèd for the wasteful vengeance<br />
+            That shall fly with them; for many a thousand widows<br />
+            Shall this, his mock, mock out of their dear husbands,<br />
+            Mock mothers from their sons, mock castles down,<br />
+            And some are yet ungotten and unborn<br />
+            That shall have cause to curse the Dauphin’s scorn."
+            </p>
+            <p class="actScene">- Act I, Scene II</p>
+            <p>
+            Henry's basically saying "we'll see who's laughing after I'm done with you. Even people who haven't been conceived yet
+            will have cause to curse you for starting this."
+            <br />
+            <br />          
+            Note the repetition of the word mock, it resembles the sound of tennis balls being struck in a game, as well as a sort
+            of martial rhythm. This is Shakespeare's genius at work: conveying feeling not only through words, but through sound and repetition as well.
+            <br />
+            <br />          
+            He ends the speech by saying that the Dauphin's taunt will turn sour in his mouth when everyone is crying, instead of
+            laughing at it:
+            </p>
+            <br />
+            <p class="quote">
+            "His jest will savor but of shallow wit<br />
+            When thousands weep more than did laugh at it."
+            </p>
+            <p class="actScene">- Act I, Scene II</p>
+            <p>
+            Henry V also contains the famous St Crispin's Day speech given by Henry on the eve of the Battle of Agincourt. He's
+            trying to motivate his men because they are greatly outnumbered by the French:
+            </p>
+            <br />
+            <p class="quote">
+            "We few, we happy few, we band of brothers;<br />
+            For he to-day that sheds his blood with me<br />
+            Shall be my brother; be he ne’er so vile,<br />
+            This day shall gentle his condition:<br />
+            And gentlemen in England now a-bed<br />
+            Shall think themselves accursed they were not here,<br />
+            And hold their manhoods cheap whiles any speaks<br />
+            That fought with us upon Saint Crispin’s day."
+        </p>
+        <p class="actScene">- Act IV, Scene III</p>
+        <br />
+        <p class="menu"><a href="#menu">BACK TO MENU</a></p>
+        <hr />
+        <h3 class=title id="muchAdo">MUCH ADO ABOUT NOTHING</h3>
+        <p>
+            This, together with Hamlet, is one of my favourite plays. It's basically a razor-sharp, battle-of-wits Elizabethan
+            rom-com.
+            <br />
+            <br />
+            <em>Enter Benedick</em>: a cocky ladies' man whose last thought on earth is that of marriage.
+            <em>Enter Beatrice:</em> an intelligent, independent woman who does not want to be tied down to a man, no matter what anyone thinks.
+            <br />
+            <br />
+            Now, it's clear that these two know each other, but there's also a faint undercurrent of hurt feelings and regret there,
+            so we can guess that something happened between them in the past, and it is this that's turned them against each other.
+            And what follows is some of the funniest verbal sparring in all of Shakespeare.
+            <br />
+            <p class="character">BEATRICE:</p>
+            <p class="quote">
+            "I wonder that you will still be talking, Signor Benedick.<br />
+            Nobody marks you."
+            <br />
+            <p class="character">BENEDICK:</p>
+            <p class="quote">
+            "What, my dear Lady Disdain! Are you yet living?"
+            </p>
+            <p class="character">BEATRICE:</p>
+            <p class="quote">
+            "Is it possible disdain should die while she hath such meet<br />
+            food to feed it as Signor Benedick? Courtesy itself must<br />
+            convert to disdain if you come in her presence."
+            </p>
+            <p class="actScene">- Act I, Scene I</p>
+            <p>
+            Gradually, and with the help of their friends, who trick them into thinking each is in love with the other, they soften
+            up to the idea of love. They must awkwardly team up to save the marriage of Beatrice's cousin Hero and Benedick's friend
+            Claudio, and Benedick's galantry in the face of Beatrice's despair for her cousin finally wins her over.
+            <br />
+            <br />
+            In the end, the verbal sparring turns into confessions of love:
+            <br />
+            <p class="character">BENEDICK:</p>
+            <p class="quote">
+            "I do love nothing in the world so well as you: is not that strange?"
+            </p>
+            <p class="and">And:</p>
+            <p class="character">BEATRICE:</p>
+            <p class="quote">
+            "I love you with so much of my heart that none is left to protest."
+            </p>
+            <p class="actScene">- Act IV, Scene I</p>
+            <br />
+            <p>
+            When you realise that their names literally mean "she that blesses" and "he who is blessed" the ending should've been
+            pretty obvious from the start, shouldn't it?
+        </p>
+        <br />
+        <p class="menu"><a href="#menu">BACK TO MENU</a></p>
+        <hr />
+        <h3 class=title id="wintersTale">THE WINTER'S TALE</h3>
+        <p>
+            This is another one I haven't read/seen. However, it contains one of Shakespeare's most famous stage directions:
+            </p>
+            <br >
+            <p class="quote">
+            "Exit, pursued by a bear."
+            </p>
+            <br />
+            <p>
+            Need I say more?
+        </p>
+        <br />
+        <p class="menu"><a href="#menu">BACK TO MENU</a></p>
+        <hr />
+        <h3 class=title id="juliusCaesar">JULIUS CAESAR</h3>
+        <p>
+            Another of Shakespeare's histories.
+            <br />
+            <br />
+            Julius Caesar has been murdered. Quite literally stabbed in the back by a group of conspirators who wished to stop him
+            becoming the dictator of Rome. The conspirators claim that they did this for the good of Rome: they thought Julius
+            Caesar was too ambitious (even though he'd already refused the crown - which in turn made him more popular with the
+            people). One of the conspirators was Brutus, who had been friendly with Caesar and got manipulated into taking part in
+            the conspiracy.
+            <br />
+            <br />
+            Cue the famous line spoken by Julius Caesar when he sees that his friend has betrayed him: "<b><em>Et tu, Brute?</em></b>" (And you,
+            Brutus? or You too, Brutus?) now often used in common parlance in any sort of "backstabbing" situation.
+            <br />
+            <br />
+            The speech I love is one of the best examples of rhetorical irony in Shakespeare's work.
+            <br />
+            <br />
+            This is Mark Antony speaking at Caesar's funeral. He deftly turns public opinion against the assassins by manipulating
+            the emotions of the people. Reminding them that they once loved Caesar, he rouses the mob even as he states his
+            intentions against it:
+            </p>
+            <br />
+            <p class="quote">
+            "...The noble Brutus<br />
+            Hath told you Caesar was ambitious:<br />
+            If it were so, it was a grievous fault,<br />
+            And grievously hath Caesar answer’d it.<br />
+            Here, under leave of Brutus and the rest–<br />
+            For Brutus is an honourable man;<br />
+            So are they all, all honourable men–<br />
+            Come I to speak in Caesar’s funeral.<br />
+            He was my friend, faithful and just to me:<br />
+            But Brutus says he was ambitious;<br />
+            And Brutus is an honourable man."
+            </p>
+            <p class="actScene">- Act III, Scene II</p>
+            <br />
+            <p>            
+            Rather than quoting the whole speech, I think it best that you listen to it. <a class="video" href="https://youtu.be/q89MLuLSJgk" target="_blank">Here it is</a>, eloquently portrayed by the
+            brilliant Damian Lewis.
+        </p>
+        <br />
+        <p class="menu"><a href="#menu">BACK TO MENU</a></p>
+        <hr />
+        <p class="footer">Designed and coded by Jess Montero</p>
+        </div>
+        <script>
+            var insults = [
+                "'I do desire we may be better strangers.'",
+                "'I had rather chop this hand off at a blow, And with the other fling it at thy face.'",
+                "'You are not worth the dust which the rude wind blows in your face.'",
+                "'Thou art a most notable coward, an infinite and endless liar, an hourly promise breaker, the owner of not one good quality.'",
+                "'Chide God for making you the countenance you are.'",
+                "'Go to hell for an enternal moment or so.'",
+                "'Idol of idiot-worshippers.'",
+                "'A false and dull-eyed fool.'",
+                "'Thou hast no more brain than I have in mine elbows.'",
+                "'There's a man hath more hair than wit.'",
+                "'Thou have not so much brain as ear-wax.'",
+                "'You are not worth another word.'",
+                "'By my troth, I was seeking for a fool when I found you.'",
+                "'Out of my sight! Thou dost infect mine eyes.'",
+                "'Scratching could not make it worse... such a face as yours.'",
+                "'Thou smell of mountain goat.'",
+                "'Thou lump of foul deformity.'",
+                "'Thy wit’s as thick as Tewkesbury mustard.'",
+                "'I must tell you friendly in your ear, sell when you can, you are not for all markets.'",
+                "'The rankest compound of villainous smell that ever offended nostril.'",
+                "'Your brain is as dry as the remainder biscuit after a voyage.'"
+            ]
+
+            var randomNumber = Math.floor(Math.random() * (21));
+
+            function insultUser() {
+                let name = prompt("What is thy name?");
+                let reply = prompt("Tell me, " + name + ", can you take an insult?");
+                reply = reply.toLowerCase();
+                reply = reply.trim();
+
+                if (reply === "yes" || reply === "aye") {
+                    alert(insults[randomNumber])
+                } else {
+                    alert("Thou art a most notable coward.")
+                }
+                window.location.reload();
+            }
+
+            let insultButton = document.querySelector("button");
+            insultButton.addEventListener("click", insultUser)
+
+        </script>
+</body>
+</html>
