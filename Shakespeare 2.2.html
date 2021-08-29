@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>I 💙 SHAKESPEARE</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&family=Rubik:wght@700&display=swap"
         rel="stylesheet">
@@ -17,15 +19,14 @@
 
     h1 {
         font-family: 'Rubik', helvetica, sans-serif;
-        font-size: clamp(57.5px, 6.42vw, 87.8px);
+        font-size: 82px;
         text-align: center;
-        margin: 0 auto;
         color: #de5767;
         }
 
     h2 {
         font-family: 'Rubik', helvetica, sans-serif;
-        font-size: clamp(46.5px, 5.5vw, 75px);
+        font-size: 75px;
         text-align: center;
         letter-spacing: 7px;
         padding: 0px 5px 0px 15px;
@@ -44,7 +45,7 @@
 
     p {
             line-height: 1.8;
-            text-align: left;
+            text-align: justify;
             font-family: 'Raleway', sans-serif;
             font-size: 16px;
             margin: 0 auto;
@@ -274,11 +275,21 @@
         margin: 20px auto 0px;
     }
 
+    @media (max-width: 576px) {
+        h1 {
+            font-size: 32px;
+        }
+        h2 {
+            font-size: 28px;
+            letter-spacing: 4px;
+            padding: 5px 0 0;
+        }
+    }
+
 </style>
 </head>
 <body>
     <div class="container">
-
         <h1>SHAKESPEARE</h1>
 
         <h2>ISN'T BORING</h2>
